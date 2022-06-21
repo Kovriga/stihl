@@ -42,7 +42,9 @@ export default class NavBar extends Vue {
 
   .nav-bar--header-left
     display: flex
-    flex: auto
+    flex: 1
+    align-items: center
+    justify-content: space-around
     a
       svg
         height: 33px
