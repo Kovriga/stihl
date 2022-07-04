@@ -39,6 +39,10 @@ export default class NavBar extends Vue {
 .nav-bar--main
   display: flex
   height: 88px
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
 
   .nav-bar--header-left
     display: flex
@@ -46,8 +50,15 @@ export default class NavBar extends Vue {
     align-items: center
     justify-content: space-around
     a
+      transition: 0.3s
+      font-family: Montserrat-Bold
+      font-size: 14px
+      text-decoration: none
+      color: black
       svg
         height: 33px
+    a:hover
+      color: #898989
 
   .nav-bar--header-right
     display: flex
